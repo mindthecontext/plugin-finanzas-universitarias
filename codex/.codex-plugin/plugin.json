@@ -1,0 +1,23 @@
+{
+  "name": "finanzas-universitarias",
+  "version": "2.1.0",
+  "description": "Lectura financiera de universidades chilenas sobre estados auditados y la planilla FECU, con la procedencia de cada cifra a la vista y lo que la base no sostiene declarado en vez de completado.",
+  "author": {
+    "name": "MindTheContext"
+  },
+  "repository": "https://github.com/mindthecontext/saber-finanzas-universitarias",
+  "keywords": [
+    "finance",
+    "education",
+    "chile",
+    "universities",
+    "governance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Finanzas Universitarias",
+    "shortDescription": "Lectura financiera universitaria con la procedencia a la vista",
+    "longDescription": "Responde sobre liquidez, endeudamiento, resultados, dependencia de ingresos y comparaciones entre universidades chilenas, y prepara antecedentes para un órgano de gobierno. Distingue el hecho computado de la interpretación sobre él, declara «no derivable» en vez de fabricar una cifra plausible, y no da recomendaciones de inversión."
+  },
+  "mcpServers": "./.mcp.json"
+}

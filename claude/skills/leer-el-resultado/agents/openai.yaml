@@ -1,0 +1,4 @@
+interface:
+  display_name: "¿Ganó o perdió el año?"
+  short_description: "El resultado, y de dónde vino de verdad"
+  default_prompt: "Usa $leer-el-resultado para saber si esta universidad cerró el ejercicio en azul o en rojo, y qué distancia hay entre lo que dejó su operación y lo que quedó al final."

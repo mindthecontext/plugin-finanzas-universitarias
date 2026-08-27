@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparar sesión de consejo"
+  short_description: "Antecedentes financieros para un órgano de gobierno"
+  default_prompt: "Usa $preparar-sesion-de-consejo para preparar los antecedentes financieros de esta universidad para una sesión de gobierno."

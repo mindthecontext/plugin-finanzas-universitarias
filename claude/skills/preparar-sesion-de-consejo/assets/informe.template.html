@@ -1,0 +1,128 @@
+<title>__TITULO__</title>
+<style>
+:root{
+  --paper:#F2F4F0; --surface:#FFFFFF; --surface-2:#E7EAE5;
+  --ink:#16211F; --ink-2:#3D4A46; --ink-3:#66726D;
+  --rule:#D2D8D0; --rule-2:#B7C0B7;
+  --accent:#1F5C57; --accent-soft:#DCE7E4;
+  --alert:#96272B; --alert-soft:#F4DEDE; --alert-line:#DFB6B6;
+  --ok:#1F5C57;
+  /* Paleta de series segura para daltonismo (Okabe-Ito). El orden importa: las tres
+     primeras deben distinguirse también por forma de marca, no sólo por color. */
+  --s1:#0072B2; --s2:#009E73; --s3:#D55E00; --s4:#CC79A7; --s5:#56B4E9;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#111614; --surface:#182220; --surface-2:#202B28;
+    --ink:#EDF1EE; --ink-2:#B9C4BF; --ink-3:#8B9691;
+    --rule:#2B3835; --rule-2:#3D4A46;
+    --accent:#6FB3A9; --accent-soft:#1D2E2C;
+    --alert:#E08183; --alert-soft:#2E1919; --alert-line:#5C342A;
+    --ok:#6FB3A9;
+    --s1:#56A9E0; --s2:#3FC79E; --s3:#F0813A; --s4:#E4A3C7; --s5:#8FD0F5;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111614; --surface:#182220; --surface-2:#202B28;
+  --ink:#EDF1EE; --ink-2:#B9C4BF; --ink-3:#8B9691;
+  --rule:#2B3835; --rule-2:#3D4A46;
+  --accent:#6FB3A9; --accent-soft:#1D2E2C;
+  --alert:#E08183; --alert-soft:#2E1919; --alert-line:#5C342A;
+  --ok:#6FB3A9;
+  --s1:#56A9E0; --s2:#3FC79E; --s3:#F0813A; --s4:#E4A3C7; --s5:#8FD0F5;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  font-size:16.5px; line-height:1.6; margin:0; padding:0 20px 72px;
+  -webkit-font-smoothing:antialiased;
+}
+.mono,.sub,.kick,h2,.sello,.who,thead th,td.num,th.num,figcaption .fuente{
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:860px;margin:0 auto}
+header{padding:46px 0 20px;border-bottom:2px solid var(--ink)}
+.kick{font-size:10.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:31px;line-height:1.18;font-weight:600;margin:12px 0 10px;letter-spacing:-.01em}
+.sub{font-size:11.5px;color:var(--ink-3);letter-spacing:.02em}
+
+/* El sello nunca falta: o dice verificado, o dice que no lo está. Una ausencia
+   silenciosa haría que un informe sin comprobar se pareciera a uno comprobado. */
+.sello{margin-top:16px;padding:9px 13px;border:1px solid var(--rule-2);background:var(--surface);
+  font-size:11px;line-height:1.5;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.sello b{font-weight:600;color:var(--ok)}
+.sello .snap{color:var(--ink-3);font-size:10px;word-break:break-all}
+.sello.malo{border-color:var(--alert-line);background:var(--alert-soft)}
+.sello.malo b{color:var(--alert)}
+
+section{padding:26px 0;border-bottom:1px solid var(--rule)}
+h2{font-size:13px;font-weight:600;margin:0 0 12px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent)}
+p{margin:0 0 13px;max-width:68ch}
+p:last-child{margin-bottom:0}
+.una{background:var(--surface);border:1px solid var(--rule-2);border-left:4px solid var(--accent);
+  padding:18px 22px;font-size:18px;line-height:1.5;max-width:none}
+.una.abstencion{border-left-color:var(--alert)}
+.una p{margin:0;max-width:66ch}
+/* Cifra declarada: numerales tabulares y sin cortar entre la unidad y el número. */
+.f{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:13.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+/* Cifra que no se pudo comprobar contra la base: se marca donde está, para que la
+   advertencia del sello tenga destinatario y no contamine a las demás. */
+.f.nv,.sello .nv{text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-color:var(--alert);text-underline-offset:3px}
+.sello .nv{font-family:inherit}
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:480px}
+th,td{padding:8px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:500;background:var(--surface-2)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:none}
+figure{margin:18px 0 0;border:1px solid var(--rule);background:var(--surface);padding:16px 16px 12px}
+/* Mobiliario de la figura: título que la nombra, pregunta que dice qué responde. */
+figure .titulo-figura{font-size:13px;font-weight:600;letter-spacing:.02em;margin:0 0 4px;color:var(--ink)}
+figure .pregunta{font-size:14.5px;line-height:1.45;margin:0 0 14px;color:var(--ink-2)}
+figcaption .fuente{display:block;margin-bottom:4px;color:var(--ink-2)}
+figure .grafico{min-height:40px}
+figure svg{display:block;max-width:100%;height:auto;overflow:visible}
+figcaption{font-size:12px;color:var(--ink-3);line-height:1.5;margin-top:10px;padding-top:10px;border-top:1px solid var(--rule)}
+figcaption .fuente{font-size:10.5px}
+.quiebre{background:var(--alert-soft);border:1px solid var(--alert-line);color:var(--alert);
+  padding:10px 13px;font-size:12.5px;line-height:1.5;margin:14px 0 0}
+ul{margin:0;padding-left:1.15em;max-width:68ch}
+li{margin-bottom:9px}
+li:last-child{margin-bottom:0}
+ol.q{list-style:none;padding:0;margin:0;counter-reset:q}
+ol.q li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--rule);margin:0;max-width:none}
+ol.q li:last-child{border-bottom:none}
+ol.q li::before{content:counter(q);position:absolute;left:0;top:13px;
+  font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--accent)}
+.who{display:block;font-size:12.5px;color:var(--ink-3);margin-top:3px}
+footer{padding:24px 0 0;font-size:12px;color:var(--ink-3);line-height:1.55;max-width:72ch}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){h1{font-size:26px}body{font-size:16px}.una{font-size:16.5px}}
+@media print{body{background:#fff;color:#000;padding:0}section,figure,.tw{break-inside:avoid}}
+</style>
+
+<div class="wrap">
+__CUERPO__
+</div>
+
+<script>/* __D3__ */</script>
+<script>/* __PLOT__ */</script>
+<script>
+const FIGURAS = /* __FIGURAS__ */;
+__RECETAS__
+document.addEventListener("DOMContentLoaded", () => {
+  for (const [id, spec] of Object.entries(FIGURAS)) {
+    const destino = document.getElementById("fig-" + id);
+    if (!destino) continue;
+    try {
+      destino.append(dibujar(spec));
+    } catch (error) {
+      destino.textContent = "La figura no pudo dibujarse: " + error.message;
+    }
+  }
+});
+</script>

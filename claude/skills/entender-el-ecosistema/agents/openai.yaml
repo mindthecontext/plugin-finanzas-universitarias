@@ -1,0 +1,4 @@
+interface:
+  display_name: "Entender el ecosistema"
+  short_description: "El sector, con la frontera de la fuente al frente"
+  default_prompt: "Usa $entender-el-ecosistema para describir cómo está el sistema universitario chileno y dónde cae una institución dentro de él."
