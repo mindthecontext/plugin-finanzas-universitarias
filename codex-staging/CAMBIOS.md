@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v2.2.1 · 2026-09-15
+
+Si tu cuenta está autenticada pero no tiene habilitado este servicio, ahora te lo dice: el conector aparece conectado, y al usarlo recibes el motivo y a quién pedir la habilitación. Antes aparecía como si faltara autorizar, y volver a autorizar no lo arreglaba.
+
+- Herramientas: `build_financial_answer_context`, `build_sector_answer_context`, `compare_fecu_metric`, `compare_financial_metric`, `describe_fecu_distribution`, `describe_fecu_institution`, `get_analysis_criteria`, `list_fecu_institutions`, `list_fecu_measures`, `list_institutions`, `rank_fecu_institutions`, `route_financial_question`, `trace_financial_claim`, `ver_cambios`, `verify_reported_figures`
+- Skills: `empezar-aqui`, `entender-el-ecosistema`, `entender-una-universidad`, `leer-el-resultado`, `leer-el-sustento`, `leer-la-solidez`, `leer-los-costos`, `preparar-sesion-de-consejo`
+- Datos: sin manifiesto
+
 ## v2.2.0 · 2026-09-15
 
 El saber dice qué cambió de una versión a otra y en qué versión está corriendo: aparece `ver_cambios`. Y si tienes un asiento y es la primera vez que te conectas —o te conectas desde una cuenta que el servicio todavía no conoce, con tu mismo correo—, ahora entras en tu primera consulta también cuando el servicio acaba de arrancar. Lo que ya respondía sigue igual.
