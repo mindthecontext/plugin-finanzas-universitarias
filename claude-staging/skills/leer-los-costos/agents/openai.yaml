@@ -1,0 +1,4 @@
+interface:
+  display_name: "¿En qué se le va la plata?"
+  short_description: "Remuneraciones y administración, contra el margen"
+  default_prompt: "Usa $leer-los-costos para saber qué parte del ingreso de esta universidad se va en personas y en administración, y si el margen deja espacio para sostener esa estructura."

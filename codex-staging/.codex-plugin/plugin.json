@@ -1,5 +1,5 @@
 {
-  "name": "finanzas-universitarias",
+  "name": "finanzas-universitarias-staging",
   "version": "2.2.0",
   "description": "Lectura financiera de universidades chilenas sobre estados auditados y la planilla FECU, con la procedencia de cada cifra a la vista y lo que la base no sostiene declarado en vez de completado.",
   "author": {

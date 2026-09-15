@@ -1,0 +1,4 @@
+interface:
+  display_name: "¿De qué vive?"
+  short_description: "Cuánto de su ingreso pone el Estado"
+  default_prompt: "Usa $leer-el-sustento para saber de dónde viene el financiamiento de esta universidad y qué parte de su ingreso depende de aportes fiscales."

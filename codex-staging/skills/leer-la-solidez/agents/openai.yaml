@@ -1,0 +1,4 @@
+interface:
+  display_name: "¿Cómo está parada?"
+  short_description: "Lo que dice el balance — y lo que no"
+  default_prompt: "Usa $leer-la-solidez para saber cómo se ve el balance de esta universidad: qué cubre con lo corriente y cuánto de sus activos es patrimonio propio, con su posición entre las de su tipo."

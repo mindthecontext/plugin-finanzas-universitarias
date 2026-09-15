@@ -1,0 +1,4 @@
+interface:
+  display_name: "Entender una universidad"
+  short_description: "Lectura ordenada de la situación financiera"
+  default_prompt: "Usa $entender-una-universidad para leer la situación financiera de esta universidad con el orden y los contrastes de la metodología."

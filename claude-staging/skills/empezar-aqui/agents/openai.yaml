@@ -1,0 +1,4 @@
+interface:
+  display_name: "Empezar aquí"
+  short_description: "Qué responde este servicio y qué no"
+  default_prompt: "Usa $empezar-aqui para orientarme sobre qué puedo preguntarle a este servicio y hasta dónde llega."

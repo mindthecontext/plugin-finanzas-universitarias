@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "finanzas-universitarias": {
+      "type": "http",
+      "url": "https://finanzas-universitarias-staging.mcp.mindthecontext.ai/mcp"
+    }
+  }
+}
